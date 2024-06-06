@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  gap: 100px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero-shot {
+  height: 500px;
+  width: 400px;
+  border-radius: 100%;
+}
+
+.stack-text {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.bio {
+  font-size: 1.2rem;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10rem;
+}
+
+.languages-tools {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-style: oblique;
+}
+
+.tool-icons-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  gap: 30px;
+  font-size: 30px;
+}
+.tool-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
