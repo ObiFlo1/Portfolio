@@ -42,6 +42,9 @@ function LandingPage() {
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
+        <a href="ruben flores resume.pdf" download>
+          <button className="resume-btn">Resume</button>
+        </a>
         <div className="languages-tools">languages & Tools |</div>
         <div className="tool-icons-container">
           <div className="tool-icons">
