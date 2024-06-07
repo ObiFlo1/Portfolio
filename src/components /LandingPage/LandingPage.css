@@ -5,7 +5,6 @@
   align-content: space-between;
   gap: 100px;
   width: 100vw;
-  height: 100vh;
 }
 
 .hero-shot {
@@ -141,6 +140,7 @@
     gap: 15px;
   }
   .resume-btn {
-    margin: 5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
