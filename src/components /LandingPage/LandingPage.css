@@ -9,9 +9,11 @@
 }
 
 .hero-shot {
-  height: 500px;
+  height: 390px;
   width: 400px;
   border-radius: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .stack-text {

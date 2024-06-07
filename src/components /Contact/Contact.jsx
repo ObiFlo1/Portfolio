@@ -2,16 +2,47 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <section>
-      <div className="contact-container">
-        <h1>Contanct Section</h1>
-        <form className="">
-          <label> Leave Contact Information</label>
-          <input placeholder="Full Name" type="text" onSubmit="submit" />
-          <input placeholder="Phone Number" type="text" onSubmit="submit" />
-          <input placeholder="Email" type="text" onSubmit="submit" />
-        </form>
-      </div>
+    <section id="contact" className="contact-container">
+      <h1>Contanct Section</h1>
+      <form action="">
+        <div className="formGroup">
+          <label htmlFor="name" hidden>
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div className="formGroup">
+          <label htmlFor="email" hidden>
+            Email
+          </label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="email"
+            required
+          />
+        </div>
+        <div className="formGroup">
+          <label htmlFor="message" hidden>
+            Message
+          </label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="message"
+            required
+          ></textarea>
+        </div>
+        <input className="hover btn" type="submit" value="Submit" />
+      </form>
     </section>
   );
 }
