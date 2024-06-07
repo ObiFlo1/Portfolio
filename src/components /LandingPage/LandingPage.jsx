@@ -24,9 +24,6 @@ function LandingPage() {
             from Los Angeles, California.
             <br />
             Specialized in building websites/applications
-            <br />
-            <br />
-            United States Army Veteren 🪖
           </p>
         </div>
         <div className="social-links">

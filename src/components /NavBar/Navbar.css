@@ -95,7 +95,7 @@ a:hover {
   padding: 10px;
 }
 
-@media (max-width: 392px) {
+@media (max-width: 573px) {
   .nav-bar {
     display: none;
   }
