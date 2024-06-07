@@ -6,3 +6,16 @@
   margin: 2rem;
   text-align: center;
 }
+
+@media (max-width: 392px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clear: both;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+}

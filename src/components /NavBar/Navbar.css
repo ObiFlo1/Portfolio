@@ -99,3 +99,9 @@ a:hover {
   display: block;
   padding: 10px;
 }
+
+@media (max-width: 392px) {
+  .nav-bar {
+    display: none;
+  }
+}
