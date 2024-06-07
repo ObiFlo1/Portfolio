@@ -11,8 +11,8 @@ function About() {
           <br />
           My dog Iroh & I go running in the morning and play in the afternoons.
           <br />
-          Top Playlist artist are: Morgan Wallen, Zack Bryan, Ozuma, Bad Bunny,
-          And Tommy Rich
+          Top Playlist artist are: Morgan Wallen, Zack Bryan, Ozuna, Bad Bunny,
+          and Tommy Rich
         </p>
       </div>
     </section>
