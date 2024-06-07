@@ -19,8 +19,11 @@ function LandingPage() {
         <h1 className="stack-text">Full-Stack Developer 👋 </h1>
         <div className="bio">
           <p>
-            Hello Im Ruben Flores, Full-Stack Developer from Los Angeles,
-            California.
+            Hello Im Ruben Flores, Full-Stack Developer
+            <br />
+            from Los Angeles, California.
+            <br />
+            Specialized in building websites/applications
             <br />
             <br />
             United States Army Veteren 🪖
