@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import { useState } from "react";
-import { animatedScroll as scroll } from "react-scroll";
 
 function Navbar() {
   //Define a state variable to track the visibility of the hamburger menu
