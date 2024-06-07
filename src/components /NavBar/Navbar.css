@@ -22,7 +22,7 @@ nav,
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -30,6 +30,7 @@ nav {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
+  margin-right: 2rem;
 }
 
 a {
@@ -46,6 +47,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  margin-left: 3rem;
 }
 
 .logo:hover {
