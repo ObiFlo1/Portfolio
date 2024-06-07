@@ -7,11 +7,29 @@
 
 .img-container {
   display: flex;
-  gap: 50px;
   margin: 50px;
 }
-
-img {
+.img {
+  height: 200px;
   width: 200px;
-  height: 400px;
+}
+
+@media (max-width: 392px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    height: 200px;
+    width: 200px;
+  }
 }
