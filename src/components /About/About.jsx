@@ -7,12 +7,11 @@ function About() {
         <h1>About</h1>
         <p>
           Unites States Army Vetern for a passion for web development. I enjoy
-          mixed martial arts and Lifting weights.
+          mixed martial arts and lifting weights.
           <br />
-          Me and my dog Iroh go running in the morning and play in the
-          afternoons.
+          My dog Iroh & I go running in the morning and play in the afternoons.
           <br />
-          Top Playlist artist are: Morgan Wallen, Zack Bryan, Ozuma, Bady Bunny,
+          Top Playlist artist are: Morgan Wallen, Zack Bryan, Ozuma, Bad Bunny,
           And Tommy Rich
         </p>
       </div>
