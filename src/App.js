@@ -1,10 +1,9 @@
 import LandingPage from "./components /LandingPage/LandingPage";
 import NavBar from "./components /NavBar/Navbar";
 import About from "./components /About/About.jsx";
-
-import "./App.css";
 import Contact from "./components /Contact/Contact.jsx";
 import Footer from "./components /Footer/Footer.jsx";
+import "./App.css";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
       <NavBar />
       <LandingPage />
       <About />
-
       <Contact />
       <Footer />
     </>
