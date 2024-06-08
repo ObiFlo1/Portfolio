@@ -9,7 +9,10 @@ require("dotenv").config();
 app.use(bodyParser.json());
 app.use(cors());
 
-const webURL = " https://rubenfloresportfolio.netlify.app/";
+const webURL =
+  "https://rubenfloresportfolio.netlify.app/" ||
+  "https://rubenfloresportfolio.netlify.app/#contact";
+
 const myEmail = process.env.EMAIL;
 const myPassword = process.env.PASSWORD;
 
