@@ -19,7 +19,7 @@ function Contact() {
     e.preventDefault();
     axios
       .post(
-        "https://rubenfloresportfolio.netlify.app/#contact",
+        "https://rubenfloresportfolio.netlify.app/contact",
         formData || "https://rubenfloresportfolio.netlify.app/",
         formData
       )
