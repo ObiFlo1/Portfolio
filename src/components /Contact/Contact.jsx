@@ -18,11 +18,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(
-        "https://rubenfloresportfolio.netlify.app/contact",
-        formData || "https://rubenfloresportfolio.netlify.app/",
-        formData
-      )
+      .post("https://rubenfloresportfolio.netlify.app/contact", formData)
       .then((response) => {
         alert("Form submitted successfully");
       })
