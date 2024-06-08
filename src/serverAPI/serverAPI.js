@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post("/#contact", (req, res) => {
+app.post(webURL, (req, res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
