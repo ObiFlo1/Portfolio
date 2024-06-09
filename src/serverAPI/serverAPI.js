@@ -6,8 +6,8 @@ const app = express();
 const port = 7001;
 require("dotenv").config();
 
-// app.use(bodyParser.json());
-// app.use(cors());
+app.use(bodyParser.json());
+app.use(cors());
 
 // Code below will allow you to send information from the front end to the back end..
 app.use(express.json({ limit: "25mb" }));
@@ -17,7 +17,6 @@ app.use((req, res, next) => {
   next();
 });
 
-// const webURL = " https://rubenfloresportfolio.netlify.app/";
 const myEmail = process.env.EMAIL;
 const myPassword = process.env.PASSWORD;
 
@@ -49,14 +48,14 @@ function sendEmail({ recipient_email, subject, message }) {
 }
 
 ////
-app.get("/", (req, res) => {
-  sendEmail()
-    .then((response) => res.send(response.message))
-    .catch((error) => res.status(500).send(error.message));
-});
+// app.get("/", (req, res) => {
+//   sendEmail()
+//     .then((response) => res.send(response.message))
+//     .catch((error) => res.status(500).send(error.message));
+// });
 //
 
-app.post("/contact", (req, res) => {
+app.post("/#contact", (req, res) => {
   sendEmail(req.body)
     .then((response) => res.send(response.message))
     .catch((error) => res.status(500).send(error.message));
