@@ -32,8 +32,8 @@ function sendEmail({ recipient_email, subject, message }) {
     });
     // we'll flip these, but have like this for testing purposes
     const mail_configs = {
-      from: myEmail,
-      to: recipient_email,
+      from: recipient_email,
+      to: myEmail,
       subject: subject,
       text: message,
     };
@@ -54,6 +54,12 @@ function sendEmail({ recipient_email, subject, message }) {
 //     .catch((error) => res.status(500).send(error.message));
 // });
 //
+
+app.post("/", (req, res) => {
+  sendEmail(req.body)
+    .then((response) => res.send(response.message))
+    .catch((error) => res.status(500).send(error.message));
+});
 
 app.post("/#contact", (req, res) => {
   sendEmail(req.body)
