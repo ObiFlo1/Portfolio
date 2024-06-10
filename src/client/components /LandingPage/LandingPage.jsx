@@ -23,7 +23,6 @@ function LandingPage() {
             <br />
             from Los Angeles, California.
             <br />
-            Specialized in building websites/applications
           </p>
         </div>
         <div className="social-links">
