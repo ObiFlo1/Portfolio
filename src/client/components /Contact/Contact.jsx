@@ -1,8 +1,10 @@
 import "./Contact.css";
 import { useState } from "react";
 import axios from "axios";
+require("dotenv").config();
 
 function Contact() {
+  const myURL = process.env.URL;
   // Form Data Submission
   const [formData, setFormData] = useState({
     name: "",
@@ -18,7 +20,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:7001", formData)
+      .post(myURL, formData)
       .then((response) => {
         alert("Form submitted successfully");
         return;

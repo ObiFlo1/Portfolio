@@ -19,11 +19,12 @@ app.use((req, res, next) => {
 
 const myEmail = process.env.EMAIL;
 const myPassword = process.env.PASSWORD;
+const myURL = process.env.URL;
 
 //setting up email we want to send the client's contact information to my personal email
 function sendEmail({ recipient_email, subject, message }) {
   return new Promise((resolve, reject) => {
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: myEmail,
