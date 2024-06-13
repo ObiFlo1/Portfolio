@@ -12,7 +12,7 @@ function About() {
 
         <p>
           {isMobile ? (
-            <>
+            <div className="mobile-view">
               Hello! I'm Ruben Flores, a recent graduate of the Galvanize Level
               Up by Hack Reactor coding bootcamp, specializing in PERN stack
               development. With a solid foundation in PostgreSQL, Express.js,
@@ -20,7 +20,7 @@ function About() {
               deepen my expertise and showcase my skills. Before transitioning
               to tech, I served in the United States Army for six years as a
               Sergeant and Combat Engineer (E-5).
-            </>
+            </div>
           ) : (
             <>
               Hello! I'm Ruben Flores, a recent graduate of the Galvanize Level
