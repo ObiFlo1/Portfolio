@@ -1,39 +1,25 @@
 import "./Contact.css";
 import { useState } from "react";
-import axios from "axios";
-require("dotenv").config();
 
 function Contact() {
-  const myURL = process.env.URL;
-  // Form Data Submission
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios
-      .post(myURL, formData)
-      .then((response) => {
-        alert("Form submitted successfully");
-        return;
-      })
-      .catch((error) => {
-        alert("Error submitting form");
-      });
-  };
-
+  function handleNameChange(e) {
+    // set value to the user's input
+    setName(e.target.value);
+  }
+  function handleEmailChange(e) {
+    setEmail(e.target.value);
+  }
+  function handleMessageChange(e) {
+    setMessage(e.target.value);
+  }
   return (
     <section id="contact" className="contact-container">
       <h1>Contanct</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit="submit">
         <div className="formGroup">
           <label htmlFor="name" hidden>
             Name
@@ -44,8 +30,8 @@ function Contact() {
             id="name"
             placeholder="Name"
             required
-            value={formData.name}
-            onChange={handleChange}
+            value={name}
+            onChange={handleNameChange}
           />
         </div>
         <div className="formGroup">
@@ -58,8 +44,8 @@ function Contact() {
             id="email"
             placeholder="email"
             required
-            value={formData.email}
-            onChange={handleChange}
+            value={email}
+            onChange={handleEmailChange}
           />
         </div>
         <div className="formGroup">
@@ -72,8 +58,8 @@ function Contact() {
             id="message"
             placeholder="message"
             required
-            value={formData.message}
-            onChange={handleChange}
+            value={message}
+            onChange={handleMessageChange}
           ></textarea>
         </div>
         <input className="hover btn" type="submit" value="Submit" />
