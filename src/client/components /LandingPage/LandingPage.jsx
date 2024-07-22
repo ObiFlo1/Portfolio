@@ -14,7 +14,7 @@ import {
 function LandingPage() {
   return (
     <div className="container">
-      <img className="hero-shot" src="profile3.JPG" alt="" />
+      <img className="hero-shot" src="portfolioShot.jpg" alt="" />
       <div className="text-container">
         <h1 className="stack-text">Full-Stack Developer 👋 </h1>
         <div className="bio">
